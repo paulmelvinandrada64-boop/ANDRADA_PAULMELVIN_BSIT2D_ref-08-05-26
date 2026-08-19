@@ -1,4 +1,13 @@
 # ANDRADA_PAULMELVIN_BSIT2D_ref-08-05-26
+using system;
+public class HelloWorld 
+{
+    public static void Main(string[] args)
+    {
+       Console.WriteLine ("I'm Paul Melvin Andrada, I'm 18 years old.I'm from San Domingo, lubao, Pampanga.");
+    }
+}
+
 using System;
 
 public class Helloworld
@@ -40,3 +49,28 @@ public class HelloWorld
         Console.WriteLine(myBoolean);
     }
 }
+
+
+
+using System;
+
+public class Helloworld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Enter your name: ");
+        string name = Console.ReadLine();
+
+        Console.WriteLine("Enter your age: ");
+        int age = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Enter your weight in kg: ");
+        double weightkg = Convert.ToDouble(Console.ReadLine());
+
+        double math = Math.Round(weightkg, 2); 
+        bool isStudent = true;
+
+    
+        Console.WriteLine("Hello " + name + ", you are " + age + " years old, your weight is " 
+                          + math.ToString("F2") + " kg, and you are a student: " + isStudent);
+    }
